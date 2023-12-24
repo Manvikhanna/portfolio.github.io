@@ -1,0 +1,319 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Add the following styles to the existing CSS */
+
+header {
+    background-color: transparent;
+    color: #fff;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease-in-out;
+}
+
+header:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    margin-right: auto;
+}
+
+.nav-logo img {
+    width: 50px; /* Adjust the size of your logo */
+}
+
+nav {
+    margin-right: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffd700; /* Change the text color on hover */
+}
+
+nav a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffd700;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* Add a background pattern to the navigation bar */
+.header-pattern {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('study3.jpeg') repeat; /* Replace 'pattern.png' with your pattern image */
+}
+
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; 
+}
+
+nav a:hover {
+    color: #ff0000;
+}
+
+
+
+
+.hero {
+    background-image: url('hero-background.jpg'); /* Add your hero background image */
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.about {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+
+
+.resume {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ffd700;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.resume-btn:hover {
+    background-color: #333;
+    color: #6ff1f8;
+}
+
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    transform-style: preserve-3d; /* Enable 3D transformations for the hover effect */
+}
+
+.portfolio-item:hover {
+    transform: rotateY(180deg);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: 300px; /* Set height to 100% to fill the container */
+    border-radius: 10px;
+}
+
+
+.contact {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.contact-btn:hover {
+    background-color: #0724b6;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
+
+
+.logo {
+    float: right;
+    margin-top: 10px; 
+}
+
+.logo img {
+    max-height: 50px; 
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    float: right;
+}
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 50px; /* Set the width of your social media icons */
+    height: auto;
+    border-radius: 50%;
+}
